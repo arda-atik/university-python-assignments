@@ -1,15 +1,20 @@
 import math
 
-EARTH_RADIUS_KM = 6378
-LATITUDE_DEG = 23.5
-
+# Read the ship's speed
 speed = float(input())
 
-r = EARTH_RADIUS_KM * math.cos(math.radians(LATITUDE_DEG))
+# Constants for Earth and Tropic of Cancer
+radius = 6378
+phi = 23.5
+
+# Calculate radius of the parallel and total distance
+r = radius * math.cos(math.radians(phi))
 distance = 2 * math.pi * r
 
-time = distance / speed
+# Calculate time in days and hours
+time = distance // speed
 days = int(time // 24)
 hours = round(time % 24)
 
-print(f"{days} d {hours} hrs")
+# Print the exact format required
+print(days, 'd', hours, 'hrs')
