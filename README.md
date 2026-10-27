@@ -16,3 +16,4 @@ This repository contains a collection of algorithmic problems, mathematical mode
 | `parrot_speech_analysis.py` | Analyzes text to find shared vocabularies and word counts. | Text Parsing, Sets, Custom Sorting |
 | `geospatial_coordinate_analysis.py` | Calculates distances using the Haversine formula. | Exception Handling (`try-except`), Math |
 | `temperature_data_processor.py` | Reads, sorts, and writes CSV temperature data efficiently. | File I/O, Data Parsing, Sorting |
+| `iterative_linear_solver.py` | Solves the linear system $x = Bx + c$ using fixed-point iteration and infinity-norm stopping criterion. | NumPy, Matrix Operations, Iterative Solvers, Vector Norms |
